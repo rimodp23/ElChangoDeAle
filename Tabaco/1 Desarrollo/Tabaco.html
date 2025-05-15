@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/png" href="../../Recursos/Images/Logo FavIcon Mono 6.png" sizes="128x128">
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Tabaco</title>
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <style>
+:root {
+  --ajuste-top: 0px;
+  --ajuste-bottom: 0px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero_area {
+  position: relative;
+  height: 100vh;
+  height: 100dvh;
+  padding-top: var(--ajuste-top);
+  padding-bottom: var(--ajuste-bottom);
+  background: black;
+  box-sizing: border-box;
+}
+
+.slider_section {
+  position: relative;
+  height: 100%;
+  padding-top: var(--ajuste-top);
+  padding-bottom: var(--ajuste-bottom);
+  background: black;
+  box-sizing: border-box;
+}
+
+.slider_section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% + var(--ajuste-top) + var(--ajuste-bottom));
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  z-index: 0;
+}
+
+.slider_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.feature_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.box {
+  background-color: black;
+  padding: 20px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+  @font-face {
+    font-family: 'MiFuente';
+    src: url('fonts/Trade Gothic LT Std Bold Extended.otf') format('opentype');
+  }
+
+.img-box {
+  font-family: 'MiFuente', sans-serif;
+  font-size: 38px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.box {
+  background-color: black;
+  padding: 20px 40px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  background-color: #1a1a1a;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+<!-- Efecto cambio color texto -->
+<!-- .box:hover .img-box { -->
+  <!-- color: #00ffcc; -->
+<!-- } -->
+
+.img-box {
+  position: relative;
+}
+
+.img-box::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.box:hover .img-box::after {
+  width: 100%;
+  left: 0;
+}
+.box:hover {
+  box-shadow:
+    0 0 5px #3f324d,
+    0 0 10px #3f324d,
+    0 0 20px #3f324d,
+    0 0 40px #3f324d;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+  z-index: 9999;
+  background: transparent !important; /* 🔑 que no sea negro */
+}
+.whatsapp-float img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; 
+}
+
+.whatsapp-float img {
+  transition: filter 0.3s ease;
+  
+}
+
+/* .whatsapp-float img:hover { */
+  /* filter: brightness(0.5); */
+/* } */
+
+.whatsapp-float img:hover {
+  filter: brightness(0.8);
+  transform: scale(1.1);
+}
+
+  </style>
+</head>
+<body>
+  <div class="hero_area">
+    <!-- Header visible -->
+    <header class="header_section" style="display: none;">
+      <div class="header_top">
+        <div class="container-fluid">
+          <div class="contact_nav">
+            <!-- Podés agregar contacto o redes acá -->
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <span>Rimo's Tabaco</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+   <section class="slider_section">
+  <img src="images/Index/Collage Famosos Fumando.jpg" alt="Famosos fumando">
+  <div class="slider_overlay"></div>
+
+  <!-- Botones superpuestos -->
+  <div class="feature_container">
+    <div class="box">
+      <a href="Papeles.html" class="img-link">
+        <div class="img-box">Papeles</div>
+      </a>
+    </div>
+    <div class="box">
+      <a href="Tabaco para Armar.html" class="img-link">
+        <div class="img-box">Tabaco para Armar</div>
+      </a>
+    </div>
+    <div class="box">
+      <a href="Filtros.html" class="img-link">
+        <div class="img-box">Filtros</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+  </div>
+
+  <!-- Footer visible -->
+  <footer class="footer_section" style="display: none;">
+    <div class="container">
+      <p>&copy; <span id="displayDateYear"></span>Copyright 2025 © El Chango de Ale</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    document.getElementById('displayDateYear').textContent = new Date().getFullYear();
+  </script>
+<script>
+  function ajustarAlturaPantalla() {
+    const alturaVisible = window.innerHeight;
+    document.querySelector(".slider_section").style.height = alturaVisible + "px";
+    document.querySelector(".hero_area").style.height = alturaVisible + "px";
+  }
+
+  window.addEventListener("load", ajustarAlturaPantalla);
+  window.addEventListener("resize", ajustarAlturaPantalla);
+</script>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="Intermediate-Web-Wa.html"
+   class="whatsapp-float" target="_blank" title="Contactanos por WhatsApp">
+  <img src="images/Whatsapp-logo-icon.png" alt="WhatsApp" style="width:60px;height:60px;">
+</a>
+</body>
+</html>
+

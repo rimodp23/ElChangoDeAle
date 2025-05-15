@@ -1,0 +1,112 @@
+/* Banner o header animado */
+
+
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  padding: 5px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.marquee-text {
+  white-space: nowrap;
+  font-size: 20px;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  animation: marquee 15s linear infinite;
+  text-shadow: 0 0 1.5px #000;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 64px;
+  height: 64px;
+  z-index: 9999;
+  background: transparent !important; /* 🔑 que no sea negro */
+}
+.whatsapp-float img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; 
+}
+
+.whatsapp-float img {
+  transition: filter 0.3s ease;
+  
+}
+
+/* .whatsapp-float img:hover { */
+  /* filter: brightness(0.5); */
+/* } */
+
+.whatsapp-float img:hover {
+  filter: brightness(0.8);
+  transform: scale(1.1);
+}
+
+
+
+
+.page-title{
+  color: #fff;
+}
+
+
+.woocommerce-result-count{
+  color: #fff;
+}
+
+a,.sidebar-main{
+  background-color: #000;
+}
+
+.widget-title wpc-filter-title{
+  display: none;
+}
+.wpc-filter-content wpc-filter-pa_combustion{
+  display: none;
+}
+
+a, .page-title{
+  color: #fff;
+}
+
+.woocommerce-loop-product__title{
+  color: #fff;
+}
+
+.wpc-term-count{
+  color: #fff;
+}
+
+.ast-shop-load-more{
+  color: #fff;
+}
+
+.widget-title{
+  color: #fff;
+}
+
+/* Header con el volver */
+.ast-above-header{
+  background: #aaa !important;
+}
+
+.add_to_cart_button{
+	margin-top: 3.4px !important;
+	margin-left: 3.4px !important;	
+}
+
+.wpc-filter-header{
+    font-family: 'Roboto Slab', serif !important;
+    line-height: 1.23em !important;
+}
